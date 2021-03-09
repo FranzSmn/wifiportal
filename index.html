@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,6 @@
 </head>
 <body onload="javascript:setfocus();">
    <div id="main">
-
     <div class="container">
         <div class="forms-container">
             <div class="sign-in">
@@ -29,7 +27,7 @@
                             <div class="input-field">
                                 <i class="fas fa-lock"></i>
                                 <input type="password" name="password" id="password" placeholder="Password">
-                                <i class="far fa-eye" id="togglePassword"></i>
+                                <i class="far fa-eye" id="togglePassword" name="togglePassword"></i>
                             </div>
                             <input type="submit" name="Login" id="loginButton" value="Proceed" class="btn solid">
                         </form>
@@ -46,33 +44,8 @@
     </div>
    </div>
 </body>
-<script type="text/javascript" language="JavaScript" src="/newlogscript.js"></script>
+<script src="/script-portal.js"></script>
 <script type="text/javascript" language="JavaScript" src="/prototype.js"></script>
 <script type="text/javascript" language="JavaScript" src="/sessionwindow.js"></script>
 <script type="text/javascript" language="JavaScript" src="/setfocus.js"></script>
-<script type="text/javascript" language="JavaScript">
-    <!--
-		function showsessionpageifnotsubscribe()
-		{
-			var action = $F('access_type');
-			var showSessionPage = false;
-
-			if (typeof(action) == 'string') {
-				if ($F('access_type') != 'subscribe') {
-					showSessionPage = true;
-				}
-			} else {
-				showSessionPage = true;
-			}
-
-			if (showSessionPage) {
-				showsessionpage('<% write(GetWebFullURL("http")); %>/session.asp');
-			}
-		}
-
-		if (navigator.platform != 'iPod' && navigator.platform != 'iPad' && navigator.platform != 'iPhone') {
-			document.loginForm.loginButton.onclick = showsessionpageifnotsubscribe;
-		}
-	//-->
-	</script>
 </html>
