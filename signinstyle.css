@@ -172,10 +172,19 @@
 
   .img-banner {
     grid-template-rows: 1fr;
-    border: solid;
     overflow: hidden;
+    width: 100%;
+  }
+
+  .img-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #first-image {
     width: auto;
-    height: 50vh;
+    height: 35vh;
   }
 }
 
