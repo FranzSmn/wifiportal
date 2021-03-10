@@ -141,7 +141,50 @@
   }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  .sign-in {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 50%;
+  }
+
+  .border-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding-left: 50px;
+  }
+
+  .sign-in-form {
+    width: 100%;
+  }
+
+  .img-banner {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .img-right {
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  #first-image {
+    height: 70%;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 961px) {
   .sign-in {
     display: inline-flex;
     width: 100%;
