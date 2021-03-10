@@ -1,7 +1,6 @@
 const passInput = document.querySelector('#password');
 const toggleBtn = document.querySelector('#togglePassword');
 
-
 //Show Password Function
 let showPass = () => {
     const type = passInput.getAttribute('type') === 'password' ? 'text' : 'password';

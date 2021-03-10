@@ -76,101 +76,56 @@
   width: auto;
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 481px) {
   /* smartphones, iPhone, portrait 480x320 phones */
-
   .sign-in {
-    display: grid;
-  }
-
-  .left-side {
-    grid-template-rows: 1fr;
-  }
-
-  .img-banner {
-    grid-template-rows: 1fr;
-  }
-
-  /* * {
-    margin: 0;
-    padding: 0;
-  }
-
-  .forms-container {
-    height: 100%;
-    display: grid;
+    height: 100vh;
+    width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
   }
 
-  .border-sign {
-    border-radius: 0;
-    box-shadow: none;
-    align-items: unset;
-    position: relative;
-    top: 0;
-  }
-
-  .sign-in-form {
-    height: 1vh;
-    padding: 0 15% 0 15%;
-    width: 100%;
-  }
-  .sign-in {
-    height: 1vh;
-    align-items: unset;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .img-banner {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    top: 0;
-  } */
+.left-side{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media (min-width: 481px) {
+
+.border-sign{
+  text-align: center;
+}
+
+.img-banner{
+  height: 50vh;
+  padding-top: 10%;
+}
+
+.img-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-image {
+  width: 90%;
+}
+
+}
+@media (min-width: 482px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
+
+
 
 @media only screen and (min-width: 641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  /* 
-  .container {
-    overflow: hidden;
-  }
 
-  .forms-container {
-    display: grid;
-    overflow: hidden;
-  }
-
-  .border-sign {
-    border-radius: 0;
-    box-shadow: none;
-    align-items: unset;
-    position: relative;
-    top: 10%;
-  }
-  .sign-in {
-    align-items: unset;
-    width: 100%;
-    padding: 0 10% 0 10%;
-    margin: 0;
-  }
-
-  .img-banner {
-    position: absolute;
-    width: 100%;
-    bottom: 1%;
-    padding: 0 10% 0 10%;
-  } */
 }
 @media only screen and (min-width: 961px) {
   .sign-in {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     height: 100vh;
     overflow: hidden;
