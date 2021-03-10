@@ -357,3 +357,9 @@
     margin-bottom: 30px;
   } */
 }
+
+@media screen and (orientation: landscape) {
+  #first-image {
+    display: none;
+  }
+}
