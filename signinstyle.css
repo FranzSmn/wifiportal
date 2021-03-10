@@ -7,17 +7,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  /* position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #fff;
-  overflow: hidden; */
-}
-
-.forms-container {
-}
-
 .title {
   font-size: 2.2rem;
   color: #444;
@@ -87,43 +76,72 @@
     padding-top: 10%;
   }
 
-.left-side{
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .left-side {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.border-sign{
-  text-align: center;
-}
+  .border-sign {
+    text-align: center;
+  }
 
-.img-banner{
-  height: 50vh;
-  padding-top: 10%;
-}
+  .img-banner {
+    height: 50vh;
+    padding-top: 10%;
+  }
 
-.img-right {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .img-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#first-image {
-  width: 90%;
+  #first-image {
+    width: 90%;
+  }
 }
-
-}
-@media (min-width: 482px) {
+@media only screen and (min-width: 482px) and (max-width: 640px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
+  .sign-in {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+  }
 
+  .left-side {
+  }
 
-@media only screen and (min-width: 641px) {
+  .border-sign {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 
+  .sign-in-form {
+    width: 60%;
+  }
+
+  .img-banner {
+    padding-left: 10%;
+  }
+
+  #first-image {
+    height: 50vh;
+    width: auto;
+  }
 }
-@media only screen and (min-width: 961px) {
+
+@media screen and (min-width: 641px) {
   .sign-in {
     display: inline-flex;
     width: 100%;
