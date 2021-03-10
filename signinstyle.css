@@ -149,14 +149,19 @@
 
   .forms-container {
     max-height: 100vh;
+    width: 100%;
   }
 
   .sign-in {
     display: grid;
+    width: 100%;
   }
 
   .left-side {
     grid-template-rows: 1fr;
+    height: 50vh;
+    text-align: center;
+    padding-top: 30px;
   }
 
   .border-sign {
@@ -168,6 +173,9 @@
   .img-banner {
     grid-template-rows: 1fr;
     border: solid;
+    overflow: hidden;
+    width: auto;
+    height: 50vh;
   }
 }
 
